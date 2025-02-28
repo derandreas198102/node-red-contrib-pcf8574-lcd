@@ -30,11 +30,14 @@ module.exports = function(RED) {
         var numLines = 4;
         var numCols = 20;
         switch (config.variant) {
-            case "PCF8574":
+            case "0x27":
                 addr = 0x27;
                 break;
-            case "PCF8574AT":
-                addr = 0x3F;
+            case "0x23":
+                addr = 0x23;
+                break;
+            case "0x25":
+                addr = 0x25;
                 break;
         }
         switch (config.size) {
