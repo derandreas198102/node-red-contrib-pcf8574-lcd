@@ -28,7 +28,7 @@ SOFTWARE.
         color: '#a6bbcf',
         defaults: {
             name: {value:""},
-            variant: {value:"PCF8574"},
+            variant: {value:"0x27"},
             size: {value:"20x4"}
         },
         inputs:1,
@@ -42,10 +42,11 @@ SOFTWARE.
 
 <script type="text/x-red" data-template-name="LCD-I2C">
     <div class="form-row">
-        <label for="node-input-variant"><i class="fa fa-microchip"></i> Variant</label>
+        <label for="node-input-variant"><i class="fa fa-microchip"></i> Address</label>
         <select type="text" id="node-input-variant" style="width:120px;">
-            <option value="PCF8574">PCF8574</option>
-            <option value="PCF8574AT">PCF8574AT</option>
+            <option value="0x23">0x23</option>
+            <option value="0x25">0x25</option>
+            <option value="0X27">0X27</option>
         </select>
     </div>
     <div class="form-row">
